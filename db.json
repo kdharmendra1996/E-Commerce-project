@@ -192,6 +192,42 @@
       "userId": 2,
       "productId": 5,
       "id": 5
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "price": 89900,
+      "color": "white",
+      "category": "Watch",
+      "imgurl": "../../../assets/watch.jfif",
+      "description": "The most ruggedand capable.",
+      "quantity": 1,
+      "productId": 4,
+      "userId": null,
+      "id": 6
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "price": 89900,
+      "color": "white",
+      "category": "Watch",
+      "imgurl": "../../../assets/watch.jfif",
+      "description": "The most ruggedand capable.",
+      "quantity": 1,
+      "productId": 4,
+      "userId": null,
+      "id": 7
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "price": 89900,
+      "color": "white",
+      "category": "Watch",
+      "imgurl": "../../../assets/watch.jfif",
+      "description": "The most ruggedand capable.",
+      "quantity": 1,
+      "productId": 4,
+      "userId": null,
+      "id": 8
     }
   ],
   "orders": [
