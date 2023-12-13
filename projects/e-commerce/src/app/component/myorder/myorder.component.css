@@ -1,0 +1,27 @@
+.container{
+    margin-top: 10px;
+    background-color: gray;
+    padding: 35px;
+    box-shadow: 3px 2px 3px rgb(170, 169, 169);
+    color: #949090;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.wrappers{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    width: 700px;
+    border-bottom: 4px solid salmon;
+    border-top: 4px solid salmon;
+}
+h2{
+    color: salmon;
+}
+th{
+    font-size: small;
+    color: #949090;
+}

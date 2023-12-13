@@ -1,0 +1,53 @@
+.container{
+    margin-top: 10px;
+    background-color: gray;
+    padding: 25px;
+    box-shadow: 3px 2px 3px rgb(170, 169, 169);
+    color: #949090;
+}
+.col-7 , .col-4{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+}
+.cart-card{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 3px 4px 3px 4px rgb(165, 164, 164);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cart-card p{
+    font-size: small;
+}
+.cart-card .imgBox{
+    border: 1px solid rgb(207, 205, 205);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+p.title{
+    font-weight: 500;
+    color:black;
+    font-size: 1.3em;
+}
+a{
+    color: red;
+    font-size: 25px;
+}
+dl{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 6fr 6fr;
+}
+dt{
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+dd{
+    font-size: 1em;
+}

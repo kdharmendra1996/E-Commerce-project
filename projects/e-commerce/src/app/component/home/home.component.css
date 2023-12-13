@@ -1,0 +1,40 @@
+.container{
+    margin-top: 10px;
+    background-color: rgb(201, 198, 198);
+    padding: 25px;
+    border: 1px solid gray;
+}
+.container a{
+    text-decoration: none;
+    font-size: small;
+    color: white;
+}
+.card{
+    width: 200px;
+    height: 400px;
+    box-shadow: 1px 2px 1px gray;
+    border-radius: 0;
+    overflow: hidden;
+}
+.card-body{
+    text-align: center;
+}
+.card-body p{
+    font-size: 0.8em;
+    color: gray;
+}
+.card-body h3{
+    font-size: 1em;
+    color: salmon;
+    font-weight: 500;
+}
+.card-body h2{
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+
+}

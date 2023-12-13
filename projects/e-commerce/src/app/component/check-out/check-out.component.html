@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row p-4">
+        <div class="col-7">
+           <div>
+            <h5><strong>Shopping cart</strong></h5>
+            <p>{{msg}}</p>
+           </div>
+           <hr>
+           <form action="#" #orderData="ngForm" (ngSubmit)="OrderNow(orderData.value)">
+            <div class="form-group">
+                <label for="" class="form-label">Email address</label>
+                <input type="text" class="form-control"
+                name="email"
+                 placeholder="Enter email" ngModel>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Your address</label>
+                <input type="text" class="form-control"
+                name="address"
+                 placeholder="address" ngModel>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Contact details</label>
+                <input type="text" class="form-control" 
+                name="contact"
+                placeholder="mobile no." ngModel>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Pin Code</label>
+                <input type="text" class="form-control"
+                name="pin"
+                 placeholder="pin code." ngModel>
+            </div>
+            <button  class="btn btn-success rounded rounded-0 p-2 w-100 mt-4">Order Now
+                <span class="bi bi-arrow-right"></span></button>
+           </form>
+
+        </div>
+        <div class="col-4 ms-4">
+           <dl>
+            <dt>Total Amount :</dt>
+            <dd>{{totalAmount}}</dd>
+            <dt>Payment Method :</dt>
+            <dd>Pay on Delivery</dd>
+           </dl>
+                
+            </div>
+        
+    </div>
+</div>

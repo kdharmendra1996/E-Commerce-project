@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row p-4" *ngIf="productDetails">
+        <div class="col-7">
+            <div class="product-details">
+                <h1><strong>{{productDetails.name}}</strong></h1>
+                <p>{{productDetails.description}}</p>
+                <div class="rating">
+                    <strong>4.5</strong>
+                    <span class="bi bi-star-fill"></span> |
+                    <span>431 Ratings</span>
+                </div>
+                <hr>
+                <h3><strong>&#8377; {{productDetails.price}}</strong>&nbsp; <span>MRP &nbsp;<del>&#8377;{{productDetails.price}}</del></span></h3>
+                <p>
+                    <span>Color</span> <br>
+                    <span>{{productDetails.color}}</span>
+                </p>
+                <div class="btnBox">
+                    <button *ngIf="!removeCart" class="btn btn-danger" (click)="AddToCart()">Add to Cart</button>
+                    <button *ngIf="removeCart" class="btn btn-danger" (click)="RemoveToCart(productDetails.id)">Remove to Cartt</button>
+                    <button class="btn btn-success">Buy Now</button>
+                </div>
+                <div class="input-group">
+                    <button class="btn btn-secondary" (click)="HandleQty('min')">-</button>
+                    <input type="text" value="{{count}}" class="form-control">
+                    <button class="btn btn-secondary" (click)="HandleQty('plus')">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <img src="{{productDetails.imgurl}}" alt="" width="400" height="400">
+        </div>
+    </div>
+</div>
+

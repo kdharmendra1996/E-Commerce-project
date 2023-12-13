@@ -1,0 +1,70 @@
+<div class="d-flex justify-content-center mt-4" id="container">
+    <div class="w-50 mt-4 p-4 wrapper" *ngIf="!showLogin">
+        <h3><strong>Seller Sign Up</strong></h3>
+        <form action="#" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+           <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="" class="form-label">First Name</label>
+                    <input type="text" ngModel name="fname" id="" class="form-control" placeholder="first name">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="" class="form-label">Last Name</label>
+                    <input type="text" ngModel name="lname" id="" class="form-control" placeholder="last name">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Username</label>
+                    <input type="text" ngModel name="username" id="" class="form-control" placeholder="username">
+                </div>
+           </div>
+            <div class="form-group">
+                <label for="" class="form-label">Email</label>
+                <input type="text" ngModel name="email" id="" class="form-control" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Contact No</label>
+                <input type="number" ngModel name="mobile" id="" class="form-control" placeholder="mobile no.">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <input type="password"ngModel name="password" id="" class="form-control" placeholder="password">
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-primary btn-sm w-100">SingUp</button>
+            </div>
+        </form>
+        <div class="mt-2">
+            <p class="text-center">
+                Already have an account?  <a  (click)="openLoginIn()" >Login In</a></p>
+        </div>
+    </div>
+    <!---->
+
+    <div class="w-50 mt-4 p-4 wrapper"  *ngIf="showLogin">
+        <p class="text-center text-danger">{{authError}}</p>
+        <form action="#" #sellerLogin="ngForm" (ngSubmit)="userLogin(sellerLogin.value)">
+            <div class="form-group">
+                <label for="" class="form-label">Username</label>
+                <input type="text" name="email" ngModel
+                #email="ngModel" required id="" class="form-control" placeholder="username">
+            </div>
+            <p *ngIf="email.invalid && email.touched" class="input-error">Please enter a value</p>
+            <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <input type="password" name="password" ngModel
+                #pwd="ngModel" required id="" class="form-control" placeholder="password">
+            </div>
+            <p *ngIf="pwd.invalid && pwd.touched" class="input-error">Please enter a valid password</p>
+            <div class="mt-2">
+                <button [disabled]="sellerLogin.invalid" class="btn btn-primary btn-sm w-100">Login</button>
+            </div>
+        </form>
+        <div class="mt-2">
+          <p>You don't have an account? <a (click)="openSignUp()">Sign Up</a></p>
+        </div>
+    </div>
+
+</div>

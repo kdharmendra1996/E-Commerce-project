@@ -1,0 +1,20 @@
+
+<section>
+    <div class="container mt-4">
+        <div class="mt-4 d-flex flex-wrap" *ngIf="searchResult">
+            <div class="card-container" style="width:90%" *ngFor="let item of searchResult" >
+                <div class="card-right">
+                    <a routerLink="/product-details/{{item.id}}">
+                        <img src="{{item.imgurl}}" alt="" width="150" height="180">
+                    </a>
+                </div>
+                <div class="card-left mt-4">
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.description}}</p>
+                    <p>Amount :<span class="text-danger"><strong>&#8377; {{item.price}}</strong></span> &nbsp;
+                    <del>&#8377;{{item.price}}</del></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

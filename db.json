@@ -1,0 +1,208 @@
+{
+  "seller": [
+    {
+      "fname": "Dhiraj",
+      "lname": "Srivastaw",
+      "username": "dhirajsri12@",
+      "email": "dhiraj12@gmail.com",
+      "mobile": 6789453212,
+      "password": "dhiraj12@",
+      "id": 1
+    },
+    {
+      "fname": "Dharmendra  kashyap",
+      "lname": "Singh",
+      "username": "Dhiru12",
+      "email": "Kdharmendra364@gmail.com",
+      "mobile": 8210417835,
+      "password": "dhiru12@",
+      "id": 2
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "username": "",
+      "email": "",
+      "mobile": "",
+      "password": "",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Nokia G42",
+      "price": 23900,
+      "color": "black & Red",
+      "category": "Mobile",
+      "imgurl": "../../../assets/Nokia-G42-5G-photos-6.jpg",
+      "description": "Meet the new Nokia G42, purple and fixable ",
+      "id": 1
+    },
+    {
+      "name": "Galaxy S10 Plus",
+      "price": 2900,
+      "color": "Daimond",
+      "category": "Mobile",
+      "imgurl": "../../../assets/samsung.jpg",
+      "description": "Buy Samsung Galaxy S10 Plus 128Gb 8Gb Ram Sm G975F Hybrid",
+      "id": 2
+    },
+    {
+      "name": "Iphone 15 Pro",
+      "price": 900000,
+      "color": "Daimond",
+      "category": "Mobile",
+      "imgurl": "../../../assets/iphone-15.jfif",
+      "description": "supper marketing",
+      "id": 3
+    },
+    {
+      "name": "Apple Watch Ultra 2",
+      "price": 89900,
+      "color": "white",
+      "category": "Watch",
+      "imgurl": "../../../assets/watch.jfif",
+      "description": "The most ruggedand capable.",
+      "id": 4
+    },
+    {
+      "name": "Iphone 14",
+      "price": 108999.99,
+      "color": "white",
+      "category": "Mobile",
+      "imgurl": "../../../assets/iphone-14.jfif",
+      "description": "A15 Bionic, the same super-speedy chip that’s in iPhone 13 Pro",
+      "id": 5
+    },
+    {
+      "name": "MacBook Pro 13",
+      "price": 129900,
+      "color": "black",
+      "category": "Laptop",
+      "imgurl": "../../../assets/mbp-spacegray-select-202206.jfif",
+      "description": "Go all day and into the night with up to 20 hours of battery life footnote ¹",
+      "id": 6
+    },
+    {
+      "name": "AirPods Max",
+      "price": 59900,
+      "color": "white",
+      "category": "AirPods",
+      "imgurl": "../../../assets/hero__gnfk5g59t0qe_large.png",
+      "description": "Introducing AirPods Max — a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.",
+      "id": 7
+    },
+    {
+      "name": "iPad (9th generation)",
+      "price": 33900,
+      "color": "black",
+      "category": "iPad",
+      "imgurl": "../../../assets/ipad-finish-unselect-gallery-2-202207.jfif",
+      "description": "iPad (9th generation)",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "fname": "Subhashis",
+      "lname": "Deb",
+      "email": "subh123@gmail.com",
+      "mobile": 8969457011,
+      "password": "subh12@",
+      "id": 1
+    },
+    {
+      "fname": "Udit",
+      "lname": "Singh",
+      "email": "uditkr12@gmail.com",
+      "mobile": 1234144412,
+      "password": "Uditkr12@",
+      "id": 2
+    },
+    {
+      "fname": "Anita",
+      "lname": "Sinha",
+      "email": "anita12@gmail.com",
+      "mobile": 8210434455,
+      "password": "anita12@",
+      "id": 3
+    },
+    {
+      "fname": "Sujit ",
+      "lname": "Sawan",
+      "email": "sujit1122@gmail.com",
+      "mobile": 8210434455,
+      "password": "sujit12@",
+      "id": 4
+    },
+    {
+      "fname": "Manish",
+      "lname": "Singh",
+      "email": "manish123@gmail.com",
+      "mobile": 8210417835,
+      "password": "man12@",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "name": "Nokia G42",
+      "price": 23900,
+      "color": "black & Red",
+      "category": "Mobile",
+      "imgurl": "../../../assets/Nokia-G42-5G-photos-6.jpg",
+      "description": "Meet the new Nokia G42, purple and fixable ",
+      "quantity": 0,
+      "productId": 1,
+      "userId": null,
+      "id": 1
+    },
+    {
+      "name": "Galaxy S10 Plus",
+      "price": 2900,
+      "color": "Daimond",
+      "category": "Mobile",
+      "imgurl": "../../../assets/samsung.jpg",
+      "description": "Buy Samsung Galaxy S10 Plus 128Gb 8Gb Ram Sm G975F Hybrid",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 2,
+      "id": 3
+    },
+    {
+      "name": "Nokia G42",
+      "price": 23900,
+      "color": "black & Red",
+      "category": "Mobile",
+      "imgurl": "../../../assets/Nokia-G42-5G-photos-6.jpg",
+      "description": "Meet the new Nokia G42, purple and fixable ",
+      "quantity": 2,
+      "userId": 2,
+      "productId": 1,
+      "id": 4
+    },
+    {
+      "name": "Iphone 14",
+      "price": 108999.99,
+      "color": "white",
+      "category": "Mobile",
+      "imgurl": "../../../assets/iphone-14.jfif",
+      "description": "A15 Bionic, the same super-speedy chip that’s in iPhone 13 Pro",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 5,
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "email": "Kdharmendra364@gmail.com",
+      "address": "Daldali road ,Behind of Biscuit factory",
+      "contact": "900015365",
+      "pin": "1234",
+      "totalPrice": 163792.48974999998,
+      "userId": 2,
+      "id": 1
+    }
+  ]
+}

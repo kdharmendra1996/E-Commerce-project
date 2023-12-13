@@ -1,0 +1,28 @@
+.container{
+    margin-top: 10px;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid gray;
+}
+
+.card-container{
+    display: flex;
+    border: 0;
+    border-bottom:1px solid salmon ;
+    padding: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 10px;
+}
+.card-left{
+    margin-left: 30px;
+}
+.card-left h2{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+.card-left p{
+    color: gray;
+    font-size: 1em;
+}

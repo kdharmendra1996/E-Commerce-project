@@ -1,0 +1,61 @@
+header{
+    background-color:rgb(182, 180, 180);
+    color: white;
+    padding: 8px;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:salmon;;
+    cursor: pointer;
+}
+a:hover{
+    color: #fff;
+}
+input::placeholder{
+    font-size: small;
+}
+.left ul{
+    list-style: none;
+}
+.left ul li{
+    margin-right: 2em;
+}
+.left a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: salmon;
+    margin-right: 2em;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.left a:hover{
+    color:#fff;
+}
+button{
+    background: salmon;
+    color: #fff;
+}
+button:hover{
+    background-color: black;
+}
+.center-header{
+    width: 450px;
+   position: relative;
+}
+.center-header ul{
+    margin-top: 6px;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    color: gray;
+    width: 100%;
+    z-index: 1;
+    font-size: small;
+}
+.center-header ul li{
+    margin-bottom: 5px;
+}

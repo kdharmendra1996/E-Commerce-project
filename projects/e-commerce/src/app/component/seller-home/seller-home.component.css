@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+}
+
+thead th{
+    color: salmon;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+tbody,td{
+    background-color: gray;
+    font-size: small;
+    color: #fff;
+    text-transform: capitalize;
+}

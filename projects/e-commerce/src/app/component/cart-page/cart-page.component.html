@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row p-4">
+        <div class="col-7">
+           <div>
+            <h5><strong>Shopping cart</strong></h5>
+            <p>You have 4 items in your cart</p>
+           </div>
+           <hr>
+           <div class="cart-card" *ngFor="let item of cartData">
+            <div class="imgBox">
+                <img src="{{item.imgurl}}" alt="" width="70" height="70">
+            </div>
+            <div>
+                <p class="title">{{item.name}}</p>
+            </div>
+            <div>
+               {{item.quantity}}
+            </div>
+            <div>
+               <p>{{item.price}}</p>
+            </div>
+            <div>
+                <a (click)="removeToCart(item.id)"><span class="bi bi-trash-fill text-danger"></span></a>
+            </div>
+           </div>
+
+        </div>
+        <div class="col-4 ms-4">
+            <div>
+                <h5><strong>Summary</strong></h5>
+            </div>
+            <hr>
+            <div>
+                <dl>
+                    <dt>Price</dt>
+                    <dd>{{priceSummary.price}}</dd>
+                    <dt>Discount</dt>
+                    <dd>{{priceSummary.discount}}</dd>
+                    <dt>Tex</dt>
+                    <dd>{{priceSummary.tex}}</dd>
+                    <dt>Shipping Charge</dt>
+                    <dd>{{priceSummary.delivery}}</dd>
+                    <dt>Total</dt>
+                    <dd>{{priceSummary.total}}</dd>
+                </dl>
+                <button (click)="checkOUT()" class="btn btn-success rounded rounded-0 p-2 w-100">Checkout
+                     <span class="bi bi-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+</div>

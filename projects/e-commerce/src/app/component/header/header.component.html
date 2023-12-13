@@ -1,0 +1,51 @@
+<header class="d-flex">
+    <div><a href="#" routerLink="/home"><h3><strong>E-Commerce</strong></h3></a></div>
+    <div *ngIf="menuType !=='seller'" class="center-header">
+       <div class="input-group">
+        <input type="text" class="form-control" (keyup)="searchProductClick($event)"
+         #searchValue
+         (blur)="searchHide()" placeholder="search product here..">
+        <button class="btn" (click)="searchSubmit(searchValue.value)">
+          <span class="bi bi-search"></span>
+        </button>
+       </div>
+       <ul *ngIf="searchResult">
+         <li *ngFor="let search of searchResult">
+          <a (click)="redirctDetails(search.id)">{{search.name}}</a></li>
+       </ul>
+    </div>
+    <div class="left" [ngSwitch]="menuType">
+        <ul class="d-flex " *ngSwitchCase="'default'">
+          <li><a routerLink="/home">Home</a></li>
+          <li> <a  routerLink="/signup">Seller</a></li>
+          <li><a routerLink="/user-auth">Login/SignUp</a></li>
+          <li>
+            <a  routerLink="/cart-page">
+                <span class="bi bi-">cart({{cartItems}})</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="d-flex " *ngSwitchCase="'seller'">
+            <li><a  routerLink="seller-home">Product List</a></li>
+            <li> <a  routerLink="add-product">Add Product</a></li>
+            <li><a href="#">{{sellerName}}</a></li>
+            <li><a (click)="logout()">Log Out</a></li>
+            <li>
+              <a  routerLink="/cart-page">
+                <span class="bi bi-">cart({{cartItems}})</span>
+            </a>
+            </li>
+          </ul>
+          <ul class="d-flex " *ngSwitchCase="'user'">
+            <li><a routerLink="/home">Home</a></li>
+            <li> <a  routerLink="">{{userName}}</a></li>
+            <li><a routerLink="/myorder">My Order</a></li>
+            <li><a (click)="userLogout()">LogOut</a></li>
+            <li>
+              <a [routerLink]="cartItems>0?'cart-page':null">
+                <span class="bi bi-">cart({{cartItems}})</span>
+            </a>
+            </li>
+          </ul>
+    </div>
+</header>
